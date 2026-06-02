@@ -1,4 +1,4 @@
-class Solution:
+class Solution:   #Moore Voting Algorithm
     def majorityElement(self, nums: List[int]) -> int:
         count = 0
         candidate = 0
