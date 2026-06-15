@@ -1,4 +1,4 @@
-#this is to understand the problem well. This one avoids ghost duplication  but takes a lot of time. So better solution is "mysolution.py".
+#this is to understand the problem well. This one avoids ghost duplication in odd sized array  but takes a lot of time. So better solution is "mysolution.py".
 #this is one works too and passes all testcases in leetcode. Better option is the code mentioned in the above file.
 #why it takes a lot of time even thought its O(n)? Because of including a list and appending it.
 class Solution:
