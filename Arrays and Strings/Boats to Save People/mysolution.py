@@ -11,6 +11,6 @@ class Solution:
                     j-=1
             else:
                 j-=1
-            boat+=1
+            boat+=1 #boat takes off no matter what happens. So it doesnt care abt ghost duplication in odd sized array
         return boat
                 
