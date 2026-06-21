@@ -9,8 +9,8 @@ class FreqStack:
     def push(self, val: int) -> None:
         self.freq[val]+=1
         self.counter+=1
-        heapq.heappush(self.heap,(-self.freq[val],-self.counter,val))
-    def pop(self) -> int:
+        heapq.heappush(self.heap,(-self.freq[val],-self.counter,val))    #so if the frequency are in the tie it will look counter as counter points to the closest one to the top.
+    def pop(self) -> int:                                                #counter shows which is at top of the stack.
         _,_,x=heapq.heappop(self.heap)
         self.freq[x]-=1
         return x
