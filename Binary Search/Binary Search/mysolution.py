@@ -6,9 +6,9 @@ class Solution:
         for _ in range(n):
             mid=(low+high)//2
             if nums[mid]<target:
-                low+=1
+                low=mid+1
             elif nums[mid]>target:
-                high-=1
+                high=mid-1
             else:
                 return mid
         
