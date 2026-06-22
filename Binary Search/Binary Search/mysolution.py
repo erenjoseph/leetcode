@@ -3,7 +3,7 @@ class Solution:
         n=len(nums)
         low=0
         high=n-1
-        for _ in range(n):
+        while low<=high:
             mid=(low+high)//2
             if nums[mid]<target:
                 low=mid+1
