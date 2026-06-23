@@ -1,0 +1,13 @@
+class Solution:
+    def mySqrt(self, x: int) -> int:
+        low=0
+        high=x
+        while low<=high:
+            mid=(low+high)//2
+            if mid*mid>x:
+                high=mid-1
+            elif mid*mid<x:
+                low=mid+1
+            else:
+                return mid
+        return high   #since low becomes higher than the high it breaks the while loop. and we need rounded down answer not rounded up.
